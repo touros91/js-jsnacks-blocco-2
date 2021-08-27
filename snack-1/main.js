@@ -5,18 +5,18 @@
 
 // versione con il for
 
-// var somma = 0;
+var somma = 0;
 
-// for (var i = 0; i < 5; i++) {
-//     var numeroUtente = parseInt(prompt("Inserisci un numero"));
-//     if (!isNaN (numeroUtente)) {
-//         somma += numeroUtente;
-//     } else {
-//         alert("Devi inserire solo dei numeri!");
-//     }
-// }
+for (var i = 0; i < 5; i++) {
+    var numeroUtente = parseInt(prompt("Inserisci un numero"));
+    if (!isNaN (numeroUtente)) {
+        somma += numeroUtente;
+    } else {
+        alert("Devi inserire solo dei numeri!");
+    }
+}
 
-// document.getElementById("somma").innerHTML += somma;
+document.getElementById("somma").innerHTML += somma;
 
 
 
