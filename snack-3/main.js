@@ -6,22 +6,15 @@ var nomi = ["Andrea", "Claudio", "Chiara"];
 
 var cognomi = ["Geraci", "Rossi", "Parisi"];
 
+var invitati = [];
+
 // versione col for
 
 for (var i = 0; i < 3; i++) {
     var nomeCasuale = Math.floor(Math.random(i) * 3);
     var cognomeCasuale = Math.floor(Math.random(i) * 3);
-    console.log(nomi[nomeCasuale] + " " + cognomi[cognomeCasuale]);
+    var invitato = nomi[nomeCasuale] + " " + cognomi[cognomeCasuale];
+    invitati.push(invitato);
 }
 
-
-// versione col while 
-
-var i = 0;
-
-while (i <3) {
-    var nomeCasuale = Math.floor(Math.random(i) * 3);
-    var cognomeCasuale = Math.floor(Math.random(i) * 3);
-    console.log(nomi[nomeCasuale] + " " + cognomi[cognomeCasuale]);
-    i++;
-}
+console.log(invitati);
