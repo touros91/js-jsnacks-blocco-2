@@ -4,6 +4,10 @@
 
 var numero = parseInt(prompt("Inserisci un numero"));
 
+while (isNaN(numero)) {
+    numero = parseInt(prompt("Devi inserire un numero!!!"));
+}
+
 if (numero % 2 == 0) {
     console.log(numero);
 } else {
