@@ -3,7 +3,7 @@
 // Esegui questo programma in due versioni, con il for e con il while.
 
 
-// versione con il for
+// versione con il ciclo for
 
 var somma = 0;
 
@@ -18,18 +18,18 @@ for (var i = 0; i < 5; i++) {
 document.getElementById("somma").innerHTML += somma;
 
 
-// versione con il while
+// versione con il ciclo while
 
-var i = 0;
-var somma = 0;
+// var i = 0;
+// var somma = 0;
 
-while (i < 5) {
-    var numeroUtente = parseInt(prompt("Inserisci un numero"));
-    while (isNaN(numeroUtente)) {
-        numeroUtente = parseInt(prompt("Devi inserire solo dei numeri!"));
-    }
-    somma += numeroUtente;
-    i++;
-}
+// while (i < 5) {
+//     var numeroUtente = parseInt(prompt("Inserisci un numero"));
+//     while (isNaN(numeroUtente)) {
+//         numeroUtente = parseInt(prompt("Devi inserire solo dei numeri!"));
+//     }
+//     somma += numeroUtente;
+//     i++;
+// }
 
-document.getElementById("somma").innerHTML += somma;
+// document.getElementById("somma").innerHTML += somma;
