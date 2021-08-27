@@ -9,15 +9,13 @@ var somma = 0;
 
 for (var i = 0; i < 5; i++) {
     var numeroUtente = parseInt(prompt("Inserisci un numero"));
-    if (!isNaN (numeroUtente)) {
-        somma += numeroUtente;
-    } else {
-        alert("Devi inserire solo dei numeri!");
+    while (isNaN(numeroUtente)) {
+        numeroUtente = parseInt(prompt("Devi inserire solo dei numeri!"));
     }
+    somma += numeroUtente;
 }
 
 document.getElementById("somma").innerHTML += somma;
-
 
 
 // versione con il while
@@ -27,11 +25,10 @@ var somma = 0;
 
 while (i < 5) {
     var numeroUtente = parseInt(prompt("Inserisci un numero"));
-    if (!isNaN (numeroUtente)) {
-        somma += numeroUtente;
-    } else {
-        alert("Devi inserire solo dei numeri!");
+    while (isNaN(numeroUtente)) {
+        numeroUtente = parseInt(prompt("Devi inserire solo dei numeri!"));
     }
+    somma += numeroUtente;
     i++;
 }
 
